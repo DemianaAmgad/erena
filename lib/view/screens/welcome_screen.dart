@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../../themes/constants.dart';
+import '../widgets/custom_button_widget.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -15,12 +16,11 @@ class WelcomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(
-                flex: 2,
-                child: Image.asset(
-                  'images/welcome.png',
-                  //fit: BoxFit.cover,
-                ),
+              const SizedBox(height: AppSpacing.small),
+              Image.asset(
+                'images/welcome.png',
+                height: 200,
+                fit: BoxFit.cover,
               ),
               Text(
                 'Erena Deco Art',
@@ -28,26 +28,23 @@ class WelcomeScreen extends StatelessWidget {
                     AppTextStyles.headline1.copyWith(color: AppColors.primary),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: AppSpacing.small),
+              const SizedBox(height: AppSpacing.medium),
               const Text(
                 'Your personal wedding planning assistant',
                 style: AppTextStyles.bodyText,
                 textAlign: TextAlign.center,
               ),
-              ElevatedButton(
+              const SizedBox(height: AppSpacing.large),
+              WelcomeButton(
+                text: 'Log in',
                 onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    padding: const EdgeInsets.symmetric(
-                        vertical: AppSpacing.medium,
-                        horizontal: AppSpacing.large)),
-                child: Text(
-                  'Get Started',
-                  style: AppTextStyles.bodyText.copyWith(
-                    color: AppColors.buttonTextColor,
-                  ),
-                ),
-              )
+              ),
+              const SizedBox(height: AppSpacing.small),
+              WelcomeButton(
+                text: 'Sign Up',
+                onPressed: () {},
+              ),
+              const SizedBox(height: AppSpacing.large),
             ],
           ),
         ),
