@@ -12,12 +12,17 @@ class AppColors {
 // Text Styles
 class AppTextStyles {
   static const TextStyle headline1 = TextStyle(
+    fontFamily: 'PlayfairDisplay',
     fontSize: 28,
     fontWeight: FontWeight.bold,
     color: AppColors.text,
   );
   static const TextStyle bodyText = TextStyle(
     fontSize: 18,
+    color: AppColors.text,
+  );
+  static const TextStyle smallBodyText = TextStyle(
+    fontSize: 14,
     color: AppColors.text,
   );
 }

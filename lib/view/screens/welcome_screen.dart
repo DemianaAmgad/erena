@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../themes/constants.dart';
 import '../widgets/custom_button_widget.dart';
+import 'login_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -37,7 +38,13 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(height: AppSpacing.large),
               WelcomeButton(
                 text: 'Log in',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginScreen()),
+                  );
+                },
               ),
               const SizedBox(height: AppSpacing.small),
               WelcomeButton(
