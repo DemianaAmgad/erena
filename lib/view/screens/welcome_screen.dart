@@ -1,3 +1,4 @@
+import 'package:erena/view/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import '../../themes/constants.dart';
 import '../widgets/custom_button_widget.dart';
@@ -49,7 +50,13 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(height: AppSpacing.small),
               WelcomeButton(
                 text: 'Sign Up',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpScreen()),
+                  );
+                },
               ),
               const SizedBox(height: AppSpacing.large),
             ],

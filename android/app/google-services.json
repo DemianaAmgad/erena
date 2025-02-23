@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261318216352",
+    "project_id": "erena-f906c",
+    "storage_bucket": "erena-f906c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261318216352:android:cb65ec38ec6897f71d57c5",
+        "android_client_info": {
+          "package_name": "com.example.erena"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsSaQDINtO-EEOCSmH5bMyZFN-Dbzjep0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

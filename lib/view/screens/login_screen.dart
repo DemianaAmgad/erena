@@ -9,7 +9,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: AppColors.shadeBackground,
       body: SafeArea(
         child: Stack(
           children: [
@@ -84,10 +84,11 @@ class LoginScreen extends StatelessWidget {
 
             // form
             Positioned(
-                top: 250, // Adjust to position it within the SafeArea
-                left: 50,
-                right: 15,
-                child: BuildForm())
+              top: 250, 
+              left: 50,
+              right: 15,
+              child: BuildForm(),
+            )
           ],
         ),
       ),

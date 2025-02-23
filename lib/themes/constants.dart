@@ -7,6 +7,7 @@ class AppColors {
   static const Color background = Color(0xFFF5F5F5); // Light Gray
   static const Color text = Colors.black87;
   static const Color buttonTextColor = Colors.white;
+  static const Color shadeBackground = Colors.grey;
 }
 
 // Text Styles
